@@ -1,0 +1,12 @@
+syntax = "proto3";
+import "proto/author.proto";
+import "proto/category.proto";
+
+option go_package = "/model";
+
+message Book {
+  int64 Id = 1;
+  string Title = 2;
+  repeated Author Author = 3;
+  Category Category = 4;
+}

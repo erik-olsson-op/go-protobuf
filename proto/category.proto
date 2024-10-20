@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option go_package = "/model";
+
+enum Category {
+  Novel = 0;
+  SciFi = 1;
+  Fantasy = 2;
+}
